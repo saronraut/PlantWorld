@@ -1,0 +1,758 @@
+[{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a69264f"
+  },
+  "id": 16,
+  "name": "Acanthaceae",
+  "common_name": "Acanthus family",
+  "slug": "acanthaceae",
+  "links": {
+    "self": "/api/v1/families/acanthaceae",
+    "division_order": "/api/v1/division_orders/scrophulariales",
+    "genus": "/api/v1/families/acanthaceae/genus"
+  },
+  "division_order": {
+    "id": 14,
+    "name": "Scrophulariales",
+    "slug": "scrophulariales",
+    "links": {
+      "self": "/api/v1/division_orders/scrophulariales",
+      "division_class": "/api/v1/division_classes/magnoliopsida"
+    },
+    "division_class": {
+      "id": 1,
+      "name": "Magnoliopsida",
+      "slug": "magnoliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/magnoliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692650"
+  },
+  "id": 19,
+  "name": "Aceraceae",
+  "common_name": "Maple family",
+  "slug": "aceraceae",
+  "links": {
+    "self": "/api/v1/families/aceraceae",
+    "division_order": "/api/v1/division_orders/sapindales",
+    "genus": "/api/v1/families/aceraceae/genus"
+  },
+  "division_order": {
+    "id": 17,
+    "name": "Sapindales",
+    "slug": "sapindales",
+    "links": {
+      "self": "/api/v1/division_orders/sapindales",
+      "division_class": "/api/v1/division_classes/magnoliopsida"
+    },
+    "division_class": {
+      "id": 1,
+      "name": "Magnoliopsida",
+      "slug": "magnoliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/magnoliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692651"
+  },
+  "id": 575,
+  "name": "Achariaceae",
+  "common_name": null,
+  "slug": "achariaceae",
+  "links": {
+    "self": "/api/v1/families/achariaceae",
+    "division_order": null,
+    "genus": "/api/v1/families/achariaceae/genus"
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692652"
+  },
+  "id": 471,
+  "name": "Achatocarpaceae",
+  "common_name": "Achatocarpus family",
+  "slug": "achatocarpaceae",
+  "links": {
+    "self": "/api/v1/families/achatocarpaceae",
+    "division_order": "/api/v1/division_orders/caryophyllales",
+    "genus": "/api/v1/families/achatocarpaceae/genus"
+  },
+  "division_order": {
+    "id": 6,
+    "name": "Caryophyllales",
+    "slug": "caryophyllales",
+    "links": {
+      "self": "/api/v1/division_orders/caryophyllales",
+      "division_class": "/api/v1/division_classes/magnoliopsida"
+    },
+    "division_class": {
+      "id": 1,
+      "name": "Magnoliopsida",
+      "slug": "magnoliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/magnoliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692653"
+  },
+  "id": 31,
+  "name": "Acoraceae",
+  "common_name": "Calamus family",
+  "slug": "acoraceae",
+  "links": {
+    "self": "/api/v1/families/acoraceae",
+    "division_order": "/api/v1/division_orders/arales",
+    "genus": "/api/v1/families/acoraceae/genus"
+  },
+  "division_order": {
+    "id": 25,
+    "name": "Arales",
+    "slug": "arales",
+    "links": {
+      "self": "/api/v1/division_orders/arales",
+      "division_class": "/api/v1/division_classes/liliopsida"
+    },
+    "division_class": {
+      "id": 4,
+      "name": "Liliopsida",
+      "slug": "liliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/liliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692654"
+  },
+  "id": 33,
+  "name": "Acrobolbaceae",
+  "common_name": null,
+  "slug": "acrobolbaceae",
+  "links": {
+    "self": "/api/v1/families/acrobolbaceae",
+    "division_order": "/api/v1/division_orders/jungermanniales",
+    "genus": "/api/v1/families/acrobolbaceae/genus"
+  },
+  "division_order": {
+    "id": 27,
+    "name": "Jungermanniales",
+    "slug": "jungermanniales",
+    "links": {
+      "self": "/api/v1/division_orders/jungermanniales",
+      "division_class": "/api/v1/division_classes/hepaticopsida"
+    },
+    "division_class": {
+      "id": 7,
+      "name": "Hepaticopsida",
+      "slug": "hepaticopsida",
+      "links": {
+        "self": "/api/v1/division_classes/hepaticopsida",
+        "division": null
+      },
+      "division": null
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692655"
+  },
+  "id": 40,
+  "name": "Actinidiaceae",
+  "common_name": "Chinese Gooseberry family",
+  "slug": "actinidiaceae",
+  "links": {
+    "self": "/api/v1/families/actinidiaceae",
+    "division_order": "/api/v1/division_orders/theales",
+    "genus": "/api/v1/families/actinidiaceae/genus"
+  },
+  "division_order": {
+    "id": 31,
+    "name": "Theales",
+    "slug": "theales",
+    "links": {
+      "self": "/api/v1/division_orders/theales",
+      "division_class": "/api/v1/division_classes/magnoliopsida"
+    },
+    "division_class": {
+      "id": 1,
+      "name": "Magnoliopsida",
+      "slug": "magnoliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/magnoliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692656"
+  },
+  "id": 50,
+  "name": "Adoxaceae",
+  "common_name": "Moschatel family",
+  "slug": "adoxaceae",
+  "links": {
+    "self": "/api/v1/families/adoxaceae",
+    "division_order": "/api/v1/division_orders/dipsacales",
+    "genus": "/api/v1/families/adoxaceae/genus"
+  },
+  "division_order": {
+    "id": 1,
+    "name": "Dipsacales",
+    "slug": "dipsacales",
+    "links": {
+      "self": "/api/v1/division_orders/dipsacales",
+      "division_class": "/api/v1/division_classes/magnoliopsida"
+    },
+    "division_class": {
+      "id": 1,
+      "name": "Magnoliopsida",
+      "slug": "magnoliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/magnoliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692657"
+  },
+  "id": 607,
+  "name": "Aextoxicaceae",
+  "common_name": null,
+  "slug": "aextoxicaceae",
+  "links": {
+    "self": "/api/v1/families/aextoxicaceae",
+    "division_order": null,
+    "genus": "/api/v1/families/aextoxicaceae/genus"
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692658"
+  },
+  "id": 62,
+  "name": "Agavaceae",
+  "common_name": "Century-plant family",
+  "slug": "agavaceae",
+  "links": {
+    "self": "/api/v1/families/agavaceae",
+    "division_order": "/api/v1/division_orders/liliales",
+    "genus": "/api/v1/families/agavaceae/genus"
+  },
+  "division_order": {
+    "id": 20,
+    "name": "Liliales",
+    "slug": "liliales",
+    "links": {
+      "self": "/api/v1/division_orders/liliales",
+      "division_class": "/api/v1/division_classes/liliopsida"
+    },
+    "division_class": {
+      "id": 4,
+      "name": "Liliopsida",
+      "slug": "liliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/liliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692659"
+  },
+  "id": 131,
+  "name": "Aizoaceae",
+  "common_name": "Fig-marigold family",
+  "slug": "aizoaceae",
+  "links": {
+    "self": "/api/v1/families/aizoaceae",
+    "division_order": "/api/v1/division_orders/caryophyllales",
+    "genus": "/api/v1/families/aizoaceae/genus"
+  },
+  "division_order": {
+    "id": 6,
+    "name": "Caryophyllales",
+    "slug": "caryophyllales",
+    "links": {
+      "self": "/api/v1/division_orders/caryophyllales",
+      "division_class": "/api/v1/division_classes/magnoliopsida"
+    },
+    "division_class": {
+      "id": 1,
+      "name": "Magnoliopsida",
+      "slug": "magnoliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/magnoliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a69265a"
+  },
+  "id": 613,
+  "name": "Akaniaceae",
+  "common_name": null,
+  "slug": "akaniaceae",
+  "links": {
+    "self": "/api/v1/families/akaniaceae",
+    "division_order": null,
+    "genus": "/api/v1/families/akaniaceae/genus"
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a69265b"
+  },
+  "id": 73,
+  "name": "Alectoriaceae",
+  "common_name": null,
+  "slug": "alectoriaceae",
+  "links": {
+    "self": "/api/v1/families/alectoriaceae",
+    "division_order": "/api/v1/division_orders/lecanorales",
+    "genus": "/api/v1/families/alectoriaceae/genus"
+  },
+  "division_order": {
+    "id": 15,
+    "name": "Lecanorales",
+    "slug": "lecanorales",
+    "links": {
+      "self": "/api/v1/division_orders/lecanorales",
+      "division_class": "/api/v1/division_classes/ascomycetes"
+    },
+    "division_class": {
+      "id": 6,
+      "name": "Ascomycetes",
+      "slug": "ascomycetes",
+      "links": {
+        "self": "/api/v1/division_classes/ascomycetes",
+        "division": null
+      },
+      "division": null
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a69265c"
+  },
+  "id": 76,
+  "name": "Alismataceae",
+  "common_name": "Water-plantain family",
+  "slug": "alismataceae",
+  "links": {
+    "self": "/api/v1/families/alismataceae",
+    "division_order": "/api/v1/division_orders/alismatales",
+    "genus": "/api/v1/families/alismataceae/genus"
+  },
+  "division_order": {
+    "id": 42,
+    "name": "Alismatales",
+    "slug": "alismatales",
+    "links": {
+      "self": "/api/v1/division_orders/alismatales",
+      "division_class": "/api/v1/division_classes/liliopsida"
+    },
+    "division_class": {
+      "id": 4,
+      "name": "Liliopsida",
+      "slug": "liliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/liliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a69265d"
+  },
+  "id": 226,
+  "name": "Allisoniaceae",
+  "common_name": null,
+  "slug": "allisoniaceae",
+  "links": {
+    "self": "/api/v1/families/allisoniaceae",
+    "division_order": "/api/v1/division_orders/metzgeriales",
+    "genus": "/api/v1/families/allisoniaceae/genus"
+  },
+  "division_order": {
+    "id": 57,
+    "name": "Metzgeriales",
+    "slug": "metzgeriales",
+    "links": {
+      "self": "/api/v1/division_orders/metzgeriales",
+      "division_class": "/api/v1/division_classes/hepaticopsida"
+    },
+    "division_class": {
+      "id": 7,
+      "name": "Hepaticopsida",
+      "slug": "hepaticopsida",
+      "links": {
+        "self": "/api/v1/division_classes/hepaticopsida",
+        "division": null
+      },
+      "division": null
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a69265e"
+  },
+  "id": 83,
+  "name": "Aloaceae",
+  "common_name": "Aloe family",
+  "slug": "aloaceae",
+  "links": {
+    "self": "/api/v1/families/aloaceae",
+    "division_order": "/api/v1/division_orders/liliales",
+    "genus": "/api/v1/families/aloaceae/genus"
+  },
+  "division_order": {
+    "id": 20,
+    "name": "Liliales",
+    "slug": "liliales",
+    "links": {
+      "self": "/api/v1/division_orders/liliales",
+      "division_class": "/api/v1/division_classes/liliopsida"
+    },
+    "division_class": {
+      "id": 4,
+      "name": "Liliopsida",
+      "slug": "liliopsida",
+      "links": {
+        "self": "/api/v1/division_classes/liliopsida",
+        "division": "/api/v1/divisions/magnoliophyta"
+      },
+      "division": {
+        "id": 1,
+        "name": "Magnoliophyta",
+        "slug": "magnoliophyta",
+        "links": {
+          "self": "/api/v1/divisions/magnoliophyta",
+          "subkingdom": "/api/v1/subkingdoms/tracheobionta"
+        },
+        "subkingdom": {
+          "id": 1,
+          "name": "Tracheobionta",
+          "slug": "tracheobionta",
+          "links": {
+            "self": "/api/v1/subkingdoms/tracheobionta",
+            "kingdom": "/api/v1/kingdoms/1"
+          },
+          "kingdom": {
+            "id": 1,
+            "name": "Plantae",
+            "slug": null,
+            "links": {
+              "self": "/api/v1/kingdoms/1"
+            }
+          }
+        }
+      }
+    }
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a69265f"
+  },
+  "id": 614,
+  "name": "Alseuosmiaceae",
+  "common_name": null,
+  "slug": "alseuosmiaceae",
+  "links": {
+    "self": "/api/v1/families/alseuosmiaceae",
+    "division_order": null,
+    "genus": "/api/v1/families/alseuosmiaceae/genus"
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692660"
+  },
+  "id": 583,
+  "name": "Alstroemeriaceae",
+  "common_name": null,
+  "slug": "alstroemeriaceae",
+  "links": {
+    "self": "/api/v1/families/alstroemeriaceae",
+    "division_order": null,
+    "genus": "/api/v1/families/alstroemeriaceae/genus"
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692661"
+  },
+  "id": 617,
+  "name": "Altingiaceae",
+  "common_name": null,
+  "slug": "altingiaceae",
+  "links": {
+    "self": "/api/v1/families/altingiaceae",
+    "division_order": null,
+    "genus": "/api/v1/families/altingiaceae/genus"
+  }
+},{
+  "_id": {
+    "$oid": "60063d5e0ccd51ca6a692662"
+  },
+  "id": 578,
+  "name": "Alzateaceae",
+  "common_name": null,
+  "slug": "alzateaceae",
+  "links": {
+    "self": "/api/v1/families/alzateaceae",
+    "division_order": null,
+    "genus": "/api/v1/families/alzateaceae/genus"
+  }
+}]

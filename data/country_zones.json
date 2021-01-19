@@ -1,0 +1,699 @@
+[{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a6925ff"
+  },
+  "id": 446,
+  "name": "Abkhaziya",
+  "slug": "tcs-ab",
+  "tdwg_code": "TCS-AB",
+  "tdwg_level": 4,
+  "species_count": 0,
+  "links": {
+    "self": "/api/v1/distributions/tcs-ab",
+    "plants": "/api/v1/distributions/tcs-ab/plants",
+    "species": "/api/v1/distributions/tcs-ab/species"
+  },
+  "parent": {
+    "id": 272,
+    "name": "Transcaucasus",
+    "slug": "tcs",
+    "tdwg_code": "TCS",
+    "tdwg_level": 3,
+    "species_count": 5227,
+    "links": {
+      "self": "/api/v1/distributions/tcs",
+      "plants": "/api/v1/distributions/tcs/plants",
+      "species": "/api/v1/distributions/tcs/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692600"
+  },
+  "id": 694,
+  "name": "Acre",
+  "slug": "bzn-ac",
+  "tdwg_code": "BZN-AC",
+  "tdwg_level": 4,
+  "species_count": 0,
+  "links": {
+    "self": "/api/v1/distributions/bzn-ac",
+    "plants": "/api/v1/distributions/bzn-ac/plants",
+    "species": "/api/v1/distributions/bzn-ac/species"
+  },
+  "parent": {
+    "id": 78,
+    "name": "Brazil North",
+    "slug": "bzn",
+    "tdwg_code": "BZN",
+    "tdwg_level": 3,
+    "species_count": 12863,
+    "links": {
+      "self": "/api/v1/distributions/bzn",
+      "plants": "/api/v1/distributions/bzn/plants",
+      "species": "/api/v1/distributions/bzn/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692601"
+  },
+  "id": 447,
+  "name": "Adzhariya",
+  "slug": "tcs-ad",
+  "tdwg_code": "TCS-AD",
+  "tdwg_level": 4,
+  "species_count": 0,
+  "links": {
+    "self": "/api/v1/distributions/tcs-ad",
+    "plants": "/api/v1/distributions/tcs-ad/plants",
+    "species": "/api/v1/distributions/tcs-ad/species"
+  },
+  "parent": {
+    "id": 272,
+    "name": "Transcaucasus",
+    "slug": "tcs",
+    "tdwg_code": "TCS",
+    "tdwg_level": 3,
+    "species_count": 5227,
+    "links": {
+      "self": "/api/v1/distributions/tcs",
+      "plants": "/api/v1/distributions/tcs/plants",
+      "species": "/api/v1/distributions/tcs/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692602"
+  },
+  "id": 151,
+  "name": "Afghanistan",
+  "slug": "afg",
+  "tdwg_code": "AFG",
+  "tdwg_level": 3,
+  "species_count": 4544,
+  "links": {
+    "self": "/api/v1/distributions/afg",
+    "plants": "/api/v1/distributions/afg/plants",
+    "species": "/api/v1/distributions/afg/species"
+  },
+  "parent": {
+    "id": 453,
+    "name": "Western Asia",
+    "slug": "34",
+    "tdwg_code": "34",
+    "tdwg_level": 2,
+    "species_count": 35942,
+    "links": {
+      "self": "/api/v1/distributions/34",
+      "plants": "/api/v1/distributions/34/plants",
+      "species": "/api/v1/distributions/34/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692603"
+  },
+  "id": 407,
+  "name": "Africa",
+  "slug": "2",
+  "tdwg_code": "2",
+  "tdwg_level": 1,
+  "species_count": 197130,
+  "links": {
+    "self": "/api/v1/distributions/2",
+    "plants": "/api/v1/distributions/2/plants",
+    "species": "/api/v1/distributions/2/species"
+  },
+  "children": [
+    {
+      "id": 408,
+      "name": "Northern Africa",
+      "slug": "20",
+      "tdwg_code": "20",
+      "tdwg_level": 2,
+      "species_count": 14896,
+      "links": {
+        "self": "/api/v1/distributions/20",
+        "plants": "/api/v1/distributions/20/plants",
+        "species": "/api/v1/distributions/20/species"
+      }
+    },
+    {
+      "id": 411,
+      "name": "Macaronesia",
+      "slug": "21",
+      "tdwg_code": "21",
+      "tdwg_level": 2,
+      "species_count": 5381,
+      "links": {
+        "self": "/api/v1/distributions/21",
+        "plants": "/api/v1/distributions/21/plants",
+        "species": "/api/v1/distributions/21/species"
+      }
+    },
+    {
+      "id": 412,
+      "name": "West Tropical Africa",
+      "slug": "22",
+      "tdwg_code": "22",
+      "tdwg_level": 2,
+      "species_count": 30721,
+      "links": {
+        "self": "/api/v1/distributions/22",
+        "plants": "/api/v1/distributions/22/plants",
+        "species": "/api/v1/distributions/22/species"
+      }
+    },
+    {
+      "id": 413,
+      "name": "West-Central Tropical Africa",
+      "slug": "23",
+      "tdwg_code": "23",
+      "tdwg_level": 2,
+      "species_count": 32412,
+      "links": {
+        "self": "/api/v1/distributions/23",
+        "plants": "/api/v1/distributions/23/plants",
+        "species": "/api/v1/distributions/23/species"
+      }
+    },
+    {
+      "id": 418,
+      "name": "Northeast Tropical Africa",
+      "slug": "24",
+      "tdwg_code": "24",
+      "tdwg_level": 2,
+      "species_count": 16800,
+      "links": {
+        "self": "/api/v1/distributions/24",
+        "plants": "/api/v1/distributions/24/plants",
+        "species": "/api/v1/distributions/24/species"
+      }
+    },
+    {
+      "id": 419,
+      "name": "East Tropical Africa",
+      "slug": "25",
+      "tdwg_code": "25",
+      "tdwg_level": 2,
+      "species_count": 19309,
+      "links": {
+        "self": "/api/v1/distributions/25",
+        "plants": "/api/v1/distributions/25/plants",
+        "species": "/api/v1/distributions/25/species"
+      }
+    },
+    {
+      "id": 420,
+      "name": "South Tropical Africa",
+      "slug": "26",
+      "tdwg_code": "26",
+      "tdwg_level": 2,
+      "species_count": 24741,
+      "links": {
+        "self": "/api/v1/distributions/26",
+        "plants": "/api/v1/distributions/26/plants",
+        "species": "/api/v1/distributions/26/species"
+      }
+    },
+    {
+      "id": 421,
+      "name": "Southern Africa",
+      "slug": "27",
+      "tdwg_code": "27",
+      "tdwg_level": 2,
+      "species_count": 37792,
+      "links": {
+        "self": "/api/v1/distributions/27",
+        "plants": "/api/v1/distributions/27/plants",
+        "species": "/api/v1/distributions/27/species"
+      }
+    },
+    {
+      "id": 429,
+      "name": "Middle Atlantic Ocean",
+      "slug": "28",
+      "tdwg_code": "28",
+      "tdwg_level": 2,
+      "species_count": 644,
+      "links": {
+        "self": "/api/v1/distributions/28",
+        "plants": "/api/v1/distributions/28/plants",
+        "species": "/api/v1/distributions/28/species"
+      }
+    },
+    {
+      "id": 430,
+      "name": "Western Indian Ocean",
+      "slug": "29",
+      "tdwg_code": "29",
+      "tdwg_level": 2,
+      "species_count": 14434,
+      "links": {
+        "self": "/api/v1/distributions/29",
+        "plants": "/api/v1/distributions/29/plants",
+        "species": "/api/v1/distributions/29/species"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692604"
+  },
+  "id": 613,
+  "name": "Aguascalientes",
+  "slug": "mxe-ag",
+  "tdwg_code": "MXE-AG",
+  "tdwg_level": 4,
+  "species_count": 0,
+  "links": {
+    "self": "/api/v1/distributions/mxe-ag",
+    "plants": "/api/v1/distributions/mxe-ag/plants",
+    "species": "/api/v1/distributions/mxe-ag/species"
+  },
+  "parent": {
+    "id": 148,
+    "name": "Mexico Northeast",
+    "slug": "mxe",
+    "tdwg_code": "MXE",
+    "tdwg_level": 3,
+    "species_count": 11419,
+    "links": {
+      "self": "/api/v1/distributions/mxe",
+      "plants": "/api/v1/distributions/mxe/plants",
+      "species": "/api/v1/distributions/mxe/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692605"
+  },
+  "id": 739,
+  "name": "Aisen",
+  "slug": "cls-ai",
+  "tdwg_code": "CLS-AI",
+  "tdwg_level": 4,
+  "species_count": 0,
+  "links": {
+    "self": "/api/v1/distributions/cls-ai",
+    "plants": "/api/v1/distributions/cls-ai/plants",
+    "species": "/api/v1/distributions/cls-ai/species"
+  },
+  "parent": {
+    "id": 333,
+    "name": "Chile South",
+    "slug": "cls",
+    "tdwg_code": "CLS",
+    "tdwg_level": 3,
+    "species_count": 1634,
+    "links": {
+      "self": "/api/v1/distributions/cls",
+      "plants": "/api/v1/distributions/cls/plants",
+      "species": "/api/v1/distributions/cls/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692606"
+  },
+  "id": 144,
+  "name": "Alabama",
+  "slug": "ala",
+  "tdwg_code": "ALA",
+  "tdwg_level": 3,
+  "species_count": 3874,
+  "links": {
+    "self": "/api/v1/distributions/ala",
+    "plants": "/api/v1/distributions/ala/plants",
+    "species": "/api/v1/distributions/ala/species"
+  },
+  "parent": {
+    "id": 606,
+    "name": "Southeastern U.S.A.",
+    "slug": "78",
+    "tdwg_code": "78",
+    "tdwg_level": 2,
+    "species_count": 40281,
+    "links": {
+      "self": "/api/v1/distributions/78",
+      "plants": "/api/v1/distributions/78/plants",
+      "species": "/api/v1/distributions/78/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692607"
+  },
+  "id": 679,
+  "name": "Alagoas",
+  "slug": "bze-al",
+  "tdwg_code": "BZE-AL",
+  "tdwg_level": 4,
+  "species_count": 0,
+  "links": {
+    "self": "/api/v1/distributions/bze-al",
+    "plants": "/api/v1/distributions/bze-al/plants",
+    "species": "/api/v1/distributions/bze-al/species"
+  },
+  "parent": {
+    "id": 79,
+    "name": "Brazil Northeast",
+    "slug": "bze",
+    "tdwg_code": "BZE",
+    "tdwg_level": 3,
+    "species_count": 10955,
+    "links": {
+      "self": "/api/v1/distributions/bze",
+      "plants": "/api/v1/distributions/bze/plants",
+      "species": "/api/v1/distributions/bze/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692608"
+  },
+  "id": 325,
+  "name": "Alaska",
+  "slug": "ask",
+  "tdwg_code": "ASK",
+  "tdwg_level": 3,
+  "species_count": 1537,
+  "links": {
+    "self": "/api/v1/distributions/ask",
+    "plants": "/api/v1/distributions/ask/plants",
+    "species": "/api/v1/distributions/ask/species"
+  },
+  "parent": {
+    "id": 596,
+    "name": "Subarctic America",
+    "slug": "70",
+    "tdwg_code": "70",
+    "tdwg_level": 2,
+    "species_count": 5510,
+    "links": {
+      "self": "/api/v1/distributions/70",
+      "plants": "/api/v1/distributions/70/plants",
+      "species": "/api/v1/distributions/70/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692609"
+  },
+  "id": 93,
+  "name": "Albania",
+  "slug": "alb",
+  "tdwg_code": "ALB",
+  "tdwg_level": 3,
+  "species_count": 3429,
+  "links": {
+    "self": "/api/v1/distributions/alb",
+    "plants": "/api/v1/distributions/alb/plants",
+    "species": "/api/v1/distributions/alb/species"
+  },
+  "parent": {
+    "id": 387,
+    "name": "Southeastern Europe",
+    "slug": "13",
+    "tdwg_code": "13",
+    "tdwg_level": 2,
+    "species_count": 36460,
+    "links": {
+      "self": "/api/v1/distributions/13",
+      "plants": "/api/v1/distributions/13/plants",
+      "species": "/api/v1/distributions/13/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a69260a"
+  },
+  "id": 326,
+  "name": "Alberta",
+  "slug": "abt",
+  "tdwg_code": "ABT",
+  "tdwg_level": 3,
+  "species_count": 1776,
+  "links": {
+    "self": "/api/v1/distributions/abt",
+    "plants": "/api/v1/distributions/abt/plants",
+    "species": "/api/v1/distributions/abt/species"
+  },
+  "parent": {
+    "id": 597,
+    "name": "Western Canada",
+    "slug": "71",
+    "tdwg_code": "71",
+    "tdwg_level": 2,
+    "species_count": 7927,
+    "links": {
+      "self": "/api/v1/distributions/71",
+      "plants": "/api/v1/distributions/71/plants",
+      "species": "/api/v1/distributions/71/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a69260b"
+  },
+  "id": 212,
+  "name": "Aldabra",
+  "slug": "ald",
+  "tdwg_code": "ALD",
+  "tdwg_level": 3,
+  "species_count": 230,
+  "links": {
+    "self": "/api/v1/distributions/ald",
+    "plants": "/api/v1/distributions/ald/plants",
+    "species": "/api/v1/distributions/ald/species"
+  },
+  "parent": {
+    "id": 430,
+    "name": "Western Indian Ocean",
+    "slug": "29",
+    "tdwg_code": "29",
+    "tdwg_level": 2,
+    "species_count": 14434,
+    "links": {
+      "self": "/api/v1/distributions/29",
+      "plants": "/api/v1/distributions/29/plants",
+      "species": "/api/v1/distributions/29/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a69260c"
+  },
+  "id": 356,
+  "name": "Aleutian Is.",
+  "slug": "alu",
+  "tdwg_code": "ALU",
+  "tdwg_level": 3,
+  "species_count": 388,
+  "links": {
+    "self": "/api/v1/distributions/alu",
+    "plants": "/api/v1/distributions/alu/plants",
+    "species": "/api/v1/distributions/alu/species"
+  },
+  "parent": {
+    "id": 596,
+    "name": "Subarctic America",
+    "slug": "70",
+    "tdwg_code": "70",
+    "tdwg_level": 2,
+    "species_count": 5510,
+    "links": {
+      "self": "/api/v1/distributions/70",
+      "plants": "/api/v1/distributions/70/plants",
+      "species": "/api/v1/distributions/70/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a69260d"
+  },
+  "id": 137,
+  "name": "Algeria",
+  "slug": "alg",
+  "tdwg_code": "ALG",
+  "tdwg_level": 3,
+  "species_count": 3880,
+  "links": {
+    "self": "/api/v1/distributions/alg",
+    "plants": "/api/v1/distributions/alg/plants",
+    "species": "/api/v1/distributions/alg/species"
+  },
+  "parent": {
+    "id": 408,
+    "name": "Northern Africa",
+    "slug": "20",
+    "tdwg_code": "20",
+    "tdwg_level": 2,
+    "species_count": 14896,
+    "links": {
+      "self": "/api/v1/distributions/20",
+      "plants": "/api/v1/distributions/20/plants",
+      "species": "/api/v1/distributions/20/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a69260e"
+  },
+  "id": 303,
+  "name": "Altay",
+  "slug": "alt",
+  "tdwg_code": "ALT",
+  "tdwg_level": 3,
+  "species_count": 2555,
+  "links": {
+    "self": "/api/v1/distributions/alt",
+    "plants": "/api/v1/distributions/alt/plants",
+    "species": "/api/v1/distributions/alt/species"
+  },
+  "parent": {
+    "id": 434,
+    "name": "Siberia",
+    "slug": "30",
+    "tdwg_code": "30",
+    "tdwg_level": 2,
+    "species_count": 14376,
+    "links": {
+      "self": "/api/v1/distributions/30",
+      "plants": "/api/v1/distributions/30/plants",
+      "species": "/api/v1/distributions/30/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a69260f"
+  },
+  "id": 696,
+  "name": "Amapa",
+  "slug": "bzn-ap",
+  "tdwg_code": "BZN-AP",
+  "tdwg_level": 4,
+  "species_count": 0,
+  "links": {
+    "self": "/api/v1/distributions/bzn-ap",
+    "plants": "/api/v1/distributions/bzn-ap/plants",
+    "species": "/api/v1/distributions/bzn-ap/species"
+  },
+  "parent": {
+    "id": 78,
+    "name": "Brazil North",
+    "slug": "bzn",
+    "tdwg_code": "BZN",
+    "tdwg_level": 3,
+    "species_count": 12863,
+    "links": {
+      "self": "/api/v1/distributions/bzn",
+      "plants": "/api/v1/distributions/bzn/plants",
+      "species": "/api/v1/distributions/bzn/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692610"
+  },
+  "id": 695,
+  "name": "Amazonas",
+  "slug": "bzn-am",
+  "tdwg_code": "BZN-AM",
+  "tdwg_level": 4,
+  "species_count": 0,
+  "links": {
+    "self": "/api/v1/distributions/bzn-am",
+    "plants": "/api/v1/distributions/bzn-am/plants",
+    "species": "/api/v1/distributions/bzn-am/species"
+  },
+  "parent": {
+    "id": 78,
+    "name": "Brazil North",
+    "slug": "bzn",
+    "tdwg_code": "BZN",
+    "tdwg_level": 3,
+    "species_count": 12863,
+    "links": {
+      "self": "/api/v1/distributions/bzn",
+      "plants": "/api/v1/distributions/bzn/plants",
+      "species": "/api/v1/distributions/bzn/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692611"
+  },
+  "id": 578,
+  "name": "American Samoa",
+  "slug": "sam-as",
+  "tdwg_code": "SAM-AS",
+  "tdwg_level": 4,
+  "species_count": 0,
+  "links": {
+    "self": "/api/v1/distributions/sam-as",
+    "plants": "/api/v1/distributions/sam-as/plants",
+    "species": "/api/v1/distributions/sam-as/species"
+  },
+  "parent": {
+    "id": 220,
+    "name": "Samoa",
+    "slug": "sam",
+    "tdwg_code": "SAM",
+    "tdwg_level": 3,
+    "species_count": 1085,
+    "links": {
+      "self": "/api/v1/distributions/sam",
+      "plants": "/api/v1/distributions/sam/plants",
+      "species": "/api/v1/distributions/sam/species"
+    }
+  },
+  "children": []
+},{
+  "_id": {
+    "$oid": "60062a720ccd51ca6a692612"
+  },
+  "id": 355,
+  "name": "Amsterdam-St.Paul Is",
+  "slug": "asp",
+  "tdwg_code": "ASP",
+  "tdwg_level": 3,
+  "species_count": 82,
+  "links": {
+    "self": "/api/v1/distributions/asp",
+    "plants": "/api/v1/distributions/asp/plants",
+    "species": "/api/v1/distributions/asp/species"
+  },
+  "parent": {
+    "id": 743,
+    "name": "Subantarctic Islands",
+    "slug": "90",
+    "tdwg_code": "90",
+    "tdwg_level": 2,
+    "species_count": 882,
+    "links": {
+      "self": "/api/v1/distributions/90",
+      "plants": "/api/v1/distributions/90/plants",
+      "species": "/api/v1/distributions/90/species"
+    }
+  },
+  "children": []
+}]
