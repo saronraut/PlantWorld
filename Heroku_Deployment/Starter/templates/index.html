@@ -7,25 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pet Pals!</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
+    <!-- insert bootstrap? -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
 
 <body>
     <div class="container">
         <div class="jumbotron" style="text-align: center">
-            <h1>Pet Pal</h1>
-            <p>Find your pet a pal!</p>
+            <h1> Plant Pal</h1>
+            <p>Find your plant a pal!</p>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-                <h2>Look at all of the current pet pals!</h2>
+                <h2>Look at all of the current plant pals!</h2>
                 <div id="plot"></div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-                <h2><a href="/send">Add your pet here!</a></h2>
+                <!-- insert links within the homepage -->
+                <h2><a href="/send">Add your plant here!</a></h2>
             </div>
         </div>
     </div>
@@ -34,6 +37,7 @@
 
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    
 </body>
 
 </html>
