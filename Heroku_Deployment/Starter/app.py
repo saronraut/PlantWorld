@@ -75,6 +75,10 @@ def pals():
 
     return jsonify(pet_data)
 
+@app.route("/api/trends")
+def trends():
+    return render_template("trends.html")
+
 
 if __name__ == "__main__":
     app.run()
