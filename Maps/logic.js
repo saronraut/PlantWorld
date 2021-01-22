@@ -18,16 +18,15 @@ L.geoJson(statesData).addTo(map);
 // https://colorbrewer2.org/#type=sequential&scheme=RdPu&n=9 
 
 function getColor(d) {
-    return d > 1000 ? '#800026' :
-           d > 500  ? '#BD0026' :
-           d > 200  ? '#E31A1C' :
-           d > 100  ? '#FC4E2A' :
-           d > 50   ? '#FD8D3C' :
-           d > 20   ? '#FEB24C' :
-           d > 10   ? '#FED976' :
-                      '#FFEDA0';
+    return d > 1000 ? '#004529' :
+           d > 500  ? '#006837' :
+           d > 200  ? '#238443' :
+           d > 100  ? '#41ab5d' :
+           d > 50   ? '#78c679' :
+           d > 20   ? '#addd8e' :
+           d > 10   ? '#d9f0a3' :
+                      '#f7fcb9';
 }
-
 
 // define a styling function for our GeoJSON layer so that its fillColor depends on feature.properties.density property, 
 // also adjusting the appearance a bit and adding a nice touch with dashed stroke.
