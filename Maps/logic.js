@@ -1,14 +1,14 @@
 // Create a map of the United States of America
 
 //Initialize the map & set view to our chosen geographical coordinates & a zoom level
-var map = L.map('map').setView([37.8, -96], 4);
+let map = L.map('mapid').setView([37.8, -96], 4);
 
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     id: 'mapbox/light-v9',
-    attribution: ..., 
+    // attribution: ..., 
     tileSize: 512,
     zoomOffset: -1,
-    acessToken: API_KEY,
+    accessToken: API_KEY,
     }).addTo(map);
 
 L.geoJson(statesData).addTo(map);
@@ -50,7 +50,7 @@ L.geoJson(statesData, {style: style}).addTo(map);
 // First we’ll define an event listener for layer mouseover event:
 
 function highlightFeature(e) {
-    var layer = e.target;
+    let layer = e.target;
 
     layer.setStyle({
         weight: 5,
@@ -76,9 +76,9 @@ function resetHighlight(e) {
 // The handy geojson.resetStyle method will reset the layer style to its default state (defined by our style function). 
 // For this to work, make sure our GeoJSON layer is accessible through the geojson variable by defining it before our 
 // listeners and assigning the layer to it later:
-var geojson;
+// var geojson;
 // ... our listeners
-geojson = L.geoJson(...);
+// geojson = L.geoJson(...);
 
 
 // As an additional touch, let’s define a click listener that zooms to the state:
