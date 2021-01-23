@@ -61,6 +61,8 @@ function highlightFeature(e) {
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront();
     }
+
+    info.update(layer.feature.properties);
 }
 // ^^ we got access to the layer that was hovered through e.target,^^ 
 // set a thick grey border on the layer as our highlight effect, 
@@ -70,6 +72,7 @@ function highlightFeature(e) {
 // mouse-out
 function resetHighlight(e) {
     geojson.resetStyle(e.target);
+    info.update();
 }
 
 // The handy geojson.resetStyle method will reset the layer style to its default state (defined by our style function). 
@@ -87,7 +90,6 @@ function zoomToFeature(e) {
 
 
 // Now we’ll use the onEachFeature option to add the listeners on our state layers:
-
 function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlightFeature,
@@ -102,6 +104,39 @@ geojson = L.geoJson(statesData, {
 
 // This makes the states highlight nicely on hover and gives us the ability to add other interactions inside our listeners.
 
+let info = L.control();
 
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
 
+// method that we will use to update the control based on feature properties passed
+info.update = function (props) {
+    this._div.innerHTML = '<h4>Number of Species Per State</h4>' +  (props ?
+        '<b>' + props.name + '</b><br />' + props.density + ' species count'
+        : 'Hover over a state');
+};
 
+info.addTo(map);
+
+let legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+    let div = L.DomUtil.create('div', 'info legend'),
+        grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+        labels = [];
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (let i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+
+legend.addTo(map);
