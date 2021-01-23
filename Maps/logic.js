@@ -18,15 +18,17 @@ L.geoJson(statesData).addTo(map);
 // https://colorbrewer2.org/#type=sequential&scheme=RdPu&n=9 
 
 function getColor(d) {
-    return d > 1000 ? '#004529' :
-           d > 500  ? '#006837' :
-           d > 200  ? '#238443' :
-           d > 100  ? '#41ab5d' :
-           d > 50   ? '#78c679' :
-           d > 20   ? '#addd8e' :
-           d > 10   ? '#d9f0a3' :
-                      '#f7fcb9';
+    return d > 6800 ? '#004529' :
+           d > 6100  ? '#006837' :
+           d > 5400  ? '#238443' :
+           d > 4700  ? '#41ab5d' :
+           d > 4000   ? '#78c679' :
+           d > 3300   ? '#addd8e' :
+           d > 2600   ? '#d9f0a3' :
+           d > 1900   ? '#f7fcb9' :
+                      '#ffffe5';
 }
+
 
 // define a styling function for our GeoJSON layer so that its fillColor depends on feature.properties.density property, 
 // also adjusting the appearance a bit and adding a nice touch with dashed stroke.
@@ -34,9 +36,9 @@ function getColor(d) {
 function style(feature) {
     return {
         fillColor: getColor(feature.properties.density),
-        weight: 2,
+        weight: 1,
         opacity: 1,
-        color: 'white',
+        color: '#238443',
         dashArray: '3',
         fillOpacity: 0.7
     };
@@ -52,7 +54,7 @@ function highlightFeature(e) {
     let layer = e.target;
 
     layer.setStyle({
-        weight: 5,
+        weight: 3,
         color: '#666',
         dashArray: '',
         fillOpacity: 0.7
@@ -126,7 +128,7 @@ let legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     let div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+        grades = [0, 1900, 2600, 3300, 4000, 4700, 5400, 6100],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval

@@ -7,9 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Plant World!</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- map style-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}"/>
+
     <!-- insert bootstrap? -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     
+     <!--Leaflet CSS-->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+     crossorigin=""/>
+ 
+      <!-- Leaflet.js - Make sure you put this AFTER Leaflet's CSS -->
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+     crossorigin=""></script>
+
+
 
 <body>
     <div class="container">
@@ -34,11 +49,21 @@
         </div>
     </div>
 
+    <!--The div where we will place our map-->
+    <div id="mapid"> </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
 
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
     
+    <!--API Key-->
+    <script src="{{ url_for('static', filename='config.js') }}"></script>
+        
+    <!--JS-->
+    <script src="{{ url_for('static', filename='us-states.js') }}"></script>
+    <script src="{{ url_for('static', filename='logic.js') }}"></script>
+
 </body>
 
 </html>
