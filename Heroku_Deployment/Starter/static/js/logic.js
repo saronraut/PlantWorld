@@ -1,5 +1,5 @@
 // Create a map of the United States of America
-
+console.log("hello maps")
 //Initialize the map & set view to our chosen geographical coordinates & a zoom level
 let map = L.map('mapid').setView([37.8, -96], 4);
 
