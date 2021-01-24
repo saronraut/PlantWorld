@@ -18,15 +18,17 @@ L.geoJson(statesData).addTo(map);
 // https://colorbrewer2.org/#type=sequential&scheme=RdPu&n=9 
 
 function getColor(d) {
-    return d > 1000 ? '#004529' :
-           d > 500  ? '#006837' :
-           d > 200  ? '#238443' :
-           d > 100  ? '#41ab5d' :
-           d > 50   ? '#78c679' :
-           d > 20   ? '#addd8e' :
-           d > 10   ? '#d9f0a3' :
-                      '#f7fcb9';
+    return d > 6800 ? '#004529' :
+           d > 6100  ? '#006837' :
+           d > 5400  ? '#238443' :
+           d > 4700  ? '#41ab5d' :
+           d > 4000   ? '#78c679' :
+           d > 3300   ? '#addd8e' :
+           d > 2600   ? '#d9f0a3' :
+           d > 1900   ? '#f7fcb9' :
+                      '#ffffe5';
 }
+
 
 // define a styling function for our GeoJSON layer so that its fillColor depends on feature.properties.density property, 
 // also adjusting the appearance a bit and adding a nice touch with dashed stroke.
@@ -34,9 +36,9 @@ function getColor(d) {
 function style(feature) {
     return {
         fillColor: getColor(feature.properties.density),
-        weight: 2,
+        weight: 1,
         opacity: 1,
-        color: 'white',
+        color: '#238443',
         dashArray: '3',
         fillOpacity: 0.7
     };
@@ -52,7 +54,7 @@ function highlightFeature(e) {
     let layer = e.target;
 
     layer.setStyle({
-        weight: 5,
+        weight: 3,
         color: '#666',
         dashArray: '',
         fillOpacity: 0.7
@@ -61,6 +63,8 @@ function highlightFeature(e) {
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront();
     }
+
+    info.update(layer.feature.properties);
 }
 // ^^ we got access to the layer that was hovered through e.target,^^ 
 // set a thick grey border on the layer as our highlight effect, 
@@ -70,6 +74,7 @@ function highlightFeature(e) {
 // mouse-out
 function resetHighlight(e) {
     geojson.resetStyle(e.target);
+    info.update();
 }
 
 // The handy geojson.resetStyle method will reset the layer style to its default state (defined by our style function). 
@@ -87,7 +92,6 @@ function zoomToFeature(e) {
 
 
 // Now we’ll use the onEachFeature option to add the listeners on our state layers:
-
 function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlightFeature,
@@ -102,6 +106,39 @@ geojson = L.geoJson(statesData, {
 
 // This makes the states highlight nicely on hover and gives us the ability to add other interactions inside our listeners.
 
+let info = L.control();
 
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
 
+// method that we will use to update the control based on feature properties passed
+info.update = function (props) {
+    this._div.innerHTML = '<h4>Number of Species Per State</h4>' +  (props ?
+        '<b>' + props.name + '</b><br />' + props.density + ' species count'
+        : 'Hover over a state');
+};
 
+info.addTo(map);
+
+let legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+    let div = L.DomUtil.create('div', 'info legend'),
+        grades = [0, 1900, 2600, 3300, 4000, 4700, 5400, 6100],
+        labels = [];
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (let i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+
+legend.addTo(map);
