@@ -1,4 +1,6 @@
 // from data.js
+//Update====================================
+//need to grab from database
 var tableData = data;
 
 // get table references
@@ -24,6 +26,8 @@ function buildTable(data) {
 }
 
 // Keep Track of all filters
+//Update HTML =========================
+//the filters are in html file table
 var filters = {};
 
 function updateFilters() {
