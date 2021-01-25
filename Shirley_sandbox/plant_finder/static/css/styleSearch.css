@@ -44,10 +44,10 @@ body {
 }
 
 /* This CSS styles the ufo icon in the navbar */
-.nav-ufo {
+.nav-plant {
   position: absolute;
   bottom: 16px;
-  left: 210px;
+  left: 250px;
   width: 35px;
   color: white;
 }

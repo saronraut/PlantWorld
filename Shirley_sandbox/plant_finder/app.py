@@ -11,7 +11,7 @@ from flask import Flask, jsonify
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///titanic.sqlite")
+engine = create_engine("sqlite:///species.sqlite")
 
 # reflect an existing database into a new model
 Base = automap_base()
@@ -19,7 +19,7 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 # Save reference to the table
-Passenger = Base.classes.passenger
+flower = Base.classes.flowering
 
 #################################################
 # Flask Setup
@@ -30,12 +30,12 @@ app = Flask(__name__)
 #################################################
 
 @app.route("/")
-def welcome():
+def home():
     """List all available api routes."""
     return (
         f"Available Routes:<br/>"
         f"/api/v1.0/names<br/>"
-        f"/api/v1.0/passengers"
+        f"/api/v1.0/flowers"
     )
 
 
@@ -46,7 +46,7 @@ def names():
 
     """Return a list of all passenger names"""
     # Query all passengers
-    results = session.query(Passenger.name).all()
+    results = session.query(flower.Common_Name).all()
 
     session.close()
 
@@ -56,27 +56,27 @@ def names():
     return jsonify(all_names)
 
 
-@app.route("/api/v1.0/passengers")
-def passengers():
+@app.route("/api/v1.0/form")
+def flowersearch():
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
     """Return a list of passenger data including the name, age, and sex of each passenger"""
-    # Query all passengers
-    results = session.query(Passenger.name, Passenger.age, Passenger.sex).all()
+    # Query all flowers
+    results = session.query(flower.Common_Name, flower.Scientific_Name, flower.Flower_Color).all()
 
     session.close()
 
     # Create a dictionary from the row data and append to a list of all_passengers
-    all_passengers = []
-    for name, age, sex in results:
-        passenger_dict = {}
-        passenger_dict["name"] = name
-        passenger_dict["age"] = age
-        passenger_dict["sex"] = sex
-        all_passengers.append(passenger_dict)
+    flowers = []
+    for Common_Name, Scientific_Name, Flower_Color in results:
+        flower_dict = {}
+        flower_dict["Common_Name"] = Common_Name
+        flower_dict["Scientific_Name"] = Scientific_Name
+        flower_dict["Flower_Color"] = Flower_Color
+        flowers.append(flower_dict)
 
-    return jsonify(all_passengers)
+    return jsonify(all_flowers)
 
 
 if __name__ == '__main__':

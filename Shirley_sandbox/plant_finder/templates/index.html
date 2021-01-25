@@ -1,104 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Plant Finder</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name = "description" content ="Project using plant data"/>
-  <mata name ="keywords" content = "common name, shade tolerance, scientific name"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/styleSearch.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plant World!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- map style-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}"/>
+
+    <!-- insert bootstrap? -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+     <!--Leaflet CSS-->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+     crossorigin=""/>
+ 
+      <!-- Leaflet.js - Make sure you put this AFTER Leaflet's CSS -->
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+     crossorigin=""></script>
+
+
 
 <body>
-  <div class="wrapper">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Plants from trefle.io 
-            <!-- look for small svg images on web Machovka_flower_-_dandelion_2.svg-->
-            <img class="nav-ufo" src="static/images/b8b7ae09.svg">
-          </a>
-        </div>
-      </div>
-    </nav>
-    <!-- update css to replace nasa photo and update sizing -->
-    <div class="hero text-center">
-      <h1>Plant Search</h1>
-      <p>Find a plant for your garden</p>
-    </div>
     <div class="container">
-      <div class="row margin-top-50">
-        <div class="col-md-2">
-          <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
-              <div class="panel-body">
-                <div class="form-group">
-                  <ul class="list-group" id="filters">
-                    <li class="filter list-group-item">
-                      <label for="date">Enter a Date</label>
-                      <!-- change to common_name -->
-                      <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                    </li>
-                    <li class="filter list-group-item">
-                      <!-- change id to family -->
-                      <label for="city">Enter a City</label>
-                      <input class="form-control" id="city" type="text" placeholder="roswell">
-                    </li>
-                    <li class="filter list-group-item">
-                      <!-- keep state -->
-                      <label for="state">Enter a State</label>
-                      <input class="form-control" id="state" type="text" placeholder="ca">
-                    </li>
-                    <li class="filter list-group-item">
-                      <!-- see what saron was able to find Color? -->
-                      <label for="country">Enter a Country</label>
-                      <input class="form-control" id="country" type="text" placeholder="us">
-                    </li>
-                    <li class="filter list-group-item">
-                      <!-- see what saron was able to find edible? -->
-                      <label for="shape">Select a Shape</label>
-                      <input class="form-control" id="shape" type="text" placeholder="circle">
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        <div class="jumbotron" style="text-align: center">
+            <h1> Plant World</h1>
+            <p>Find your plant!</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Look at all of the current plant pals!</h2>
+                <div id="plot"></div>
             </div>
-          </aside>
         </div>
-        <div class="col-md-10">
-          <div id="table-area" class="">
-            <!-- <h1 class="text-center loader" id="loader">Loading...</h1> -->
-            <!-- rename table id to plants -->
-            <table id="ufo-table" class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <!-- update these to reflect final table values -->
-                  <th class="table-head">Date</th>
-                  <th class="table-head">City</th>
-                  <th class="table-head">State</th>
-                  <th class="table-head">Country</th>
-                  <th class="table-head">Shape</th>
-                  <th class="table-head">Duration</th>
-                  <th class="table-head">Comments</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- insert links within the homepage -->
+                <h2><a href="/search">Search for plants here!</a></h2>
+                <h2><a href="/trends">View plant trends!</a></h2>
+            </div>
         </div>
-      </div>
     </div>
-    <footer class="footer">
-      <span class="bottom">The plants are everywhere</span>
-    </footer>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
+
+    <!--The div where we will place our map-->
+    <div id="mapid"> </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    
+    <!--API Key-->
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+
+        
+    <!--JS-->
+    <script src="{{ url_for('static', filename='js/us-states.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/logic.js') }}"></script>
+
 </body>
 
 </html>
