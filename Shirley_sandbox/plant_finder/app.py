@@ -1,83 +1,42 @@
-import numpy as np
-
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
-
-from flask import Flask, jsonify
-
-
-#################################################
-# Database Setup
-#################################################
-engine = create_engine("sqlite:///species.sqlite")
-
-# reflect an existing database into a new model
-Base = automap_base()
-# reflect the tables
-Base.prepare(engine, reflect=True)
-
-# Save reference to the table
-flower = Base.classes.flowering
-
-#################################################
-# Flask Setup
-#################################################
+import os
+from flask_cors import CORS
+from flask import Flask, render_template, redirect, jsonify
+from pymongo import MongoClient
 app = Flask(__name__)
-#################################################
-# Flask Routes
-#################################################
+app.config['MONGO_CONNECT'] = False
+CORS(app)
+client = MongoClient(os.getenv("MONGO_URI", "mongodb://localhost:27017/"))
+db = client.flowers
+
+
+print(list(db.info.find()))
 
 @app.route("/")
 def home():
-    """List all available api routes."""
-    return (
-        f"Available Routes:<br/>"
-        f"/api/v1.0/names<br/>"
-        f"/api/v1.0/flowers"
-    )
+    return render_template("index.html")
 
 
-@app.route("/api/v1.0/names")
-def names():
-    # Create our session (link) from Python to the DB
-    session = Session(engine)
-
-    """Return a list of all passenger names"""
-    # Query all passengers
-    results = session.query(flower.Common_Name).all()
-
-    session.close()
-
-    # Convert list of tuples into normal list
-    all_names = list(np.ravel(results))
-
-    return jsonify(all_names)
-
-
-@app.route("/api/v1.0/form")
-def flowersearch():
-    # Create our session (link) from Python to the DB
-    session = Session(engine)
-
-    """Return a list of passenger data including the name, age, and sex of each passenger"""
-    # Query all flowers
-    results = session.query(flower.Common_Name, flower.Scientific_Name, flower.Flower_Color).all()
-
-    session.close()
-
-    # Create a dictionary from the row data and append to a list of all_passengers
-    flowers = []
-    for Common_Name, Scientific_Name, Flower_Color in results:
-        flower_dict = {}
-        flower_dict["Common_Name"] = Common_Name
-        flower_dict["Scientific_Name"] = Scientific_Name
-        flower_dict["Flower_Color"] = Flower_Color
-        flowers.append(flower_dict)
-
-    return jsonify(all_flowers)
+@app.route("/plants")
+def plants():
+    data = []
+    for plant in db.info.find():
+        data.append({
+            "Common_Name": flowers["Common_Name"],
+            "Scientific_Name": flowers["Scientific_Name"],
+            "Family_Name": flowers["Family_Common_Name"],
+            "Duration": flowers["Duration"],
+            "Flower_Color": flowers["Flower_Color"],
+            "Foliage_Color": flowers["Foliage_Color"],
+            "Kind_of_Plant": flowers["Growth_Habit"],
+            "Mature_Ht_ft": flowers["Height,_Mature_(feet)"],
+            "Toxicity": flowers["Toxicity"],
+            "Drought_Tolerance": flowers["Drought_Tolerance"],
+            "Shade_Tolerance": flowers["Shade_Tolerance"],
+            "Bloom_Period": flowers["Bloom_Period"],
+            "Edible": flowers["Palatable_Human"],
+        })
+    return jsonify(data=data)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
