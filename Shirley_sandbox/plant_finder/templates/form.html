@@ -33,34 +33,51 @@
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading">Plant Search</div>
               <div class="panel-body">
                 <div class="form-group">
                   <ul class="list-group" id="filters">
                     <li class="filter list-group-item">
-                      <label for="date">Enter a Date</label>
+                      <label for="common_name">Plant Name?</label>
                       <!-- change to common_name -->
-                      <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                      <input class="form-control" id="common_name" type="text" placeholder="Rosemary">
                     </li>
-                    <li class="filter list-group-item">
-                      <!-- change id to family -->
-                      <label for="city">Enter a City</label>
-                      <input class="form-control" id="city" type="text" placeholder="roswell">
+                    <!-- <li class="filter list-group-item">
+                       change id to family 
+                      <label for="color">Flower Color</label>
+                      <input class="form-control" id="flower_color" type="text" placeholder="Blue">
                     </li>
-                    <li class="filter list-group-item">
-                      <!-- keep state -->
-                      <label for="state">Enter a State</label>
-                      <input class="form-control" id="state" type="text" placeholder="ca">
-                    </li>
-                    <li class="filter list-group-item">
-                      <!-- use color from USDA -->
-                      <label for="country">Enter a Country</label>
-                      <input class="form-control" id="country" type="text" placeholder="us">
-                    </li>
+                    <li class="filter list-group-item">-->
+                      <!-- keep state >
+                      <label for="shade">Shade Tolerant</label>
+                      <input class="form-control" id="shade_tolerance" type="text" placeholder="InTolerant">
+                    </li>-->
+                     <!-- <li class="filter list-group-item">
+                       use color from USDA 
+                      <label for="moisture">Drought Tolerant</label>
+                      <input class="form-control" id="drought_tolerance" type="text" placeholder="High">
+                    </li> -->
                     <li class="filter list-group-item">
                       <!-- USDA edible? -->
-                      <label for="shape">Select a Shape</label>
-                      <input class="form-control" id="shape" type="text" placeholder="circle">
+                      <label for="food">Edible</label>
+                      <!-- <input class="form-control" id="palatable_human" type="text" placeholder="Yes"> -->
+                      <select name="Toxic" id="Toxicity">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                       </select>
+                    </li>
+                    <li class="filter list-group-item">
+                      <!-- USDA Toxicity? -->
+                      <label for="toxic">Toxicity</label>
+                      <!-- <input class="form-control" id="Toxicity" type="text" placeholder="None"> -->
+                      <select name="Toxic" id="Toxicity">
+                        <option value="">N/A</option>
+                        <option value="None">None</option>
+                        <option value="Slight">Slight</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Severe">Severe</option>
+                        
+                       </select>
                     </li>
                   </ul>
                 </div>
@@ -76,13 +93,19 @@
               <thead>
                 <tr>
                   <!-- update these to reflect final table values -->
-                  <th class="table-head">Date</th>
-                  <th class="table-head">City</th>
-                  <th class="table-head">State</th>
-                  <th class="table-head">Country</th>
-                  <th class="table-head">Shape</th>
+                  <th class="table-head">Common Name</th>
+                  <th class="table-head">Scientific Name</th>
+                  <th class="table-head">Family Name</th>
                   <th class="table-head">Duration</th>
-                  <th class="table-head">Comments</th>
+                  <th class="table-head">Flower Color</th>
+                  <th class="table-head">Foliage Color</th>
+                  <th class="table-head">Kind of Plant</th>
+                  <th class="table-head">Height Maturity (feet)</th>
+                  <th class="table-head">Toxicity</th>
+                  <th class="table-head">Drought Tolerance</th>
+                  <th class="table-head">Shade Tolerance</th>
+                  <th class="table-head">Bloom Time</th>
+                  <th class="table-head">Edible</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -96,7 +119,12 @@
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<<<<<<< HEAD
   <script src="/static/js/data.js"></script>
+=======
+  <!-- <script src="/static/js/data.js"></script> -->
+  <script src="/static/js/data2.js"></script>
+>>>>>>> 217ce60eb09cd69a43dd23b94fafdda7949bf07b
   <script src="/static/js/app.js"></script>
 </body>
 
