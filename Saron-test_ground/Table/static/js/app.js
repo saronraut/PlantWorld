@@ -19,7 +19,8 @@ function buildtable(data) {
     let shape = row.append("td");
     let duration = row.append("td");
     let comments = row.append("td");
-    date.text(item.datetime);
+    console.log(data);
+    date.text(item.toxcity);
     city.text(item.city);
     state.text(item.state);
     country.text(item.country);

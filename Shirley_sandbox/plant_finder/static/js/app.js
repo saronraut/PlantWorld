@@ -21,6 +21,7 @@ function buildTable(data) {
     Object.values(dataRow).forEach((val) => {
       var cell = row.append("td");
       cell.text(val);
+      console.log(val)
     });
   });
 }
