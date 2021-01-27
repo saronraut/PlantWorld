@@ -16,7 +16,7 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/plants")
+@app.route("/form")
 def plants():
     data = []
     for plant in db.info.find():

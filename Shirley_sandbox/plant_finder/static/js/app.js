@@ -1,10 +1,10 @@
 // from data.js
 //Update====================================
 //need to grab from database
-var tableData = data;
+let tableData = data;
 
 // get table references
-var tbody = d3.select("tbody");
+let tbody = d3.select("tbody");
 
 function buildTable(data) {
   // First, clear out any existing data
@@ -29,7 +29,7 @@ function buildTable(data) {
 // Keep Track of all filters
 //Update HTML =========================
 //the filters are in html file table
-var filters = {};
+let filters = {};
 
 function updateFilters() {
 
