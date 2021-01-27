@@ -72,8 +72,13 @@ p{
 .navbar.navbar-default {
   color: whitesmoke;
   font-size: 17px;
+  a:hover {
+    background-color: rgb(0, 225, 255);
+  }
 
 }
+
+
 
 .jumbotron {
   border-color: white;
