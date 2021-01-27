@@ -1,4 +1,3 @@
-
 // get table references
 let tbody = d3.select("tbody");
 
@@ -6,7 +5,7 @@ d3.json("/plants").then(data => {
   const initial_data = data.data.slice(0,25)
   const loc = window.location.pathname;
   if(loc === "/form"){
-  // console.log("form route")
+  
     tbody.html("");
     const dataSet = data.data
     const mapped_data = initial_data.map(item=>{
@@ -35,14 +34,15 @@ d3.json("/plants").then(data => {
     d3.event.preventDefault();
   
     // Save the element, value, and id of the filter that was changed
-    let filterNames = ["#Edible", "#Toxicity"];
+    let filterNames = ["#Flower_Color","#Drought_Tolerance","#Shade_Tolerance","#Duration","#Edible", "#Toxicity"];
     let filters = {};
+    console.log(filterNames)
 
     for (idFilters of filterNames){
       let changedElement = d3.select(idFilters);
       let elementValue = changedElement.property("value");
       let filterId = changedElement.attr("id");
-
+      console.log(`filters=${idFilters}`)
       // If a filter value was entered then add that filterId and value
       // to the filters list. Otherwise, clear that filter from the filters object
       if (elementValue) {
