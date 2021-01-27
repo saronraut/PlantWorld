@@ -17,7 +17,12 @@
     color: teal;
 }
 
-.a.navbar-header {
-    position: left;
+body{
+    background-color: #98af98;
+  }
+
+
+#filter {
+    color: #98af98
 
 }
