@@ -1,9 +1,9 @@
 
     d3.json("trends_data/treetypes.json").then((data) => {
-      var metadata = data["lemon tree"];
-      var metadata2 = data["cherry tree"];
+      var metadata = data["pine tree"];
+      var metadata2 = data["palm tree"];
       var metadata3 = data["apple tree"];
-      var metadata4 = data["peach tree"];
+      var metadata4 = data["avocado tree"];
       var metadata5 = data["orange tree"];
       var y_arr = [];
       var x_arr = [];
@@ -49,46 +49,36 @@
         x: x_arr,
         y: y_arr,
         type: 'scatter',
-        name: 'lemon tree',
-        line: {
-          color: '#FDCE2A',
-        }
+        name: 'pine tree'
       };
       var trace2 = {
         x: x_arr2,
         y: y_arr2,
         type: 'scatter',
-        name: 'cherry tree',
-        line: {
-          color: '#A91101',
-        }
+        name: 'palm tree'
       };
       var trace3 = {
         x: x_arr3,
         y: y_arr3,
         type: 'scatter',
-        name: 'apple tree',
-        line: {
-          color: '#bf4aa8',
-        }
+        name: 'apple tree'
+
       };
       var trace4 = {
         x: x_arr4,
         y: y_arr4,
         type: 'scatter',
-        name: 'peach tree',
+        name: 'avocado tree',
         line: {
-          color: '#51d0de',
+          color: 'rgba(234,234,67,1)',
         }
       };
       var trace5 = {
         x: x_arr5,
         y: y_arr5,
         type: 'scatter',
-        name: 'orange tree',
-        line: {
-          color: '#234F1E',
-        }
+        name: 'orange tree'
+
       };
       var layout1 = {
         title: "Fruit Trees",
@@ -133,7 +123,7 @@
         type: 'scatter',
         name: "buy plants online",
         line: {
-          color: '#32612D',
+          color: '#00FF00',
         }
       };
       var trace2 = {
@@ -186,19 +176,13 @@
         x: x_arr,
         y: y_arr,
         type: 'scatter',
-        name: 'vegetable garden',
-        line: {
-          color: '#234F1E',
-        }
+        name: 'vegetable garden'
       };
       var trace2 = {
         x: x_arr2,
         y: y_arr2,
         type: 'scatter',
-        name: 'flower garden',
-        line: {
-          color: '#FF7F50',
-        }
+        name: 'flower garden'
       };
       var data1 = [trace1, trace2];
       var layout3 = {
@@ -269,48 +253,33 @@
         x: x_arr,
         y: y_arr,
         type: 'scatter',
-        name: 'daffodil',
-        line: {
-          color: '#ffde22',
-        }
+        name: 'daffodil'
       };
       var trace2 = {
         x: x_arr2,
         y: y_arr2,
         type: 'scatter',
-        name: 'marigold',
-        line: {
-          color: '#39a0ca',
-        }
+        name: 'marigold'
       };
       var trace3 = {
         x: x_arr3,
         y: y_arr3,
         type: 'scatter',
-        name: 'tulip',
-        line: {
-          color: '#f95d9b',
-        }
+        name: 'tulip'
 
       };
       var trace4 = {
         x: x_arr4,
         y: y_arr4,
         type: 'scatter',
-        name: 'daisy',
-        line: {
-          color: '#161748',
-        }
+        name: 'daisy'
 
       };
       var trace5 = {
         x: x_arr5,
         y: y_arr5,
         type: 'scatter',
-        name: 'lily',
-        line: {
-          color: '#478559',
-        }
+        name: 'lily'
 
       };
       var layout4 = {
