@@ -38,34 +38,32 @@
                 <div class="form-group">
                   <ul class="list-group" id="filters">
                     <li class="filter list-group-item">
-                      <label for="common_name">Plant Name?</label>
-                      <!-- change to common_name -->
-                      <input class="form-control" id="common_name" type="text" placeholder="Rosemary">
+                      <label for="duration">Duration</label>
+                      <select name="Duration" id="Duration">
+                        <option value="">N/A</option>
+                        <option value="Perennial">Perennial</option>
+                        <option value="Biennial">Biennial</option>
+                        <option value="Annual">Annual</option>
+                        <option value="Annual, Perennial">Annual, Perennial</option>
+                        <option value="Annual, Biennial">Annual, Biennial</option>
+                        <option value="Annual, Biennial, Perennial">Annual, Biennial, Perennial</option>
+                        <option value="Biennial, Perennial">Biennial, Perennial</option>
+                      </select>
                     </li>
-                    <!-- <li class="filter list-group-item">
-                       change id to family 
-                      <label for="color">Flower Color</label>
-                      <input class="form-control" id="flower_color" type="text" placeholder="Blue">
-                    </li>
-                    <li class="filter list-group-item">-->
-                      <!-- keep state >
-                      <label for="shade">Shade Tolerant</label>
-                      <input class="form-control" id="shade_tolerance" type="text" placeholder="InTolerant">
-                    </li>-->
-                     <!-- <li class="filter list-group-item">
-                       use color from USDA 
-                      <label for="moisture">Drought Tolerant</label>
-                      <input class="form-control" id="drought_tolerance" type="text" placeholder="High">
-                    </li> -->
                     <li class="filter list-group-item">
-                      <!-- USDA edible? -->
-                      <label for="food">Edible</label>
-                      <!-- <input class="form-control" id="palatable_human" type="text" placeholder="Yes"> -->
-                      <select name="Edible" id="Edible">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                       </select>
-                    </li>
+                      <label for="color">Flower Color</label>               
+                        <select name="flowerColor" id="Flower_Color">
+                          <option value="">N/A</option>
+                          <option value="Red">Red</option>
+                          <option value="Orange">Orange</option>
+                          <option value="Yellow">Yellow</option>
+                          <option value="Green">Green</option>
+                          <option value="Blue">Blue</option>
+                          <option value="Purple">Purple</option>
+                          <option value="White">White</option>
+                          <option value="Brown">Brown</option>
+                        </select>
+                      </li>
                     <li class="filter list-group-item">
                       <!-- USDA Toxicity? -->
                       <label for="toxic">Toxicity</label>
@@ -77,7 +75,37 @@
                         <option value="Moderate">Moderate</option>
                         <option value="Severe">Severe</option>
                        </select>
+                    </li>                    
+                    <li class="filter list-group-item">
+                      <label for="droughtTolerance">Drought_Tolerance</label>
+                      <select name="droughtTolerance" id="Drought_Tolerance">
+                        <option value="">N/A</option>
+                        <option value="High">Tolerant</option>
+                        <option value="Low">Intolerant</option>
+                        <option value="Medium">Intermediate</option>
+                      </select>
                     </li>
+                    <li class="filter list-group-item">
+                      <label for="shade">Shade_Tolerance</label>
+                      <select name="shade" id="Shade_Tolerance">
+                        <option value="">N/A</option>
+                        <option value="Tolerant">Shade tolerant</option>
+                        <option value="Intolerant">Full sun</option>
+                        <option value="Intermediate">Sun - part shade</option>
+                      </select>
+                    </li> 
+                   
+                    <li class="filter list-group-item">
+                      <!-- USDA edible? -->
+                      <label for="food">Edible</label>
+                      <!-- <input class="form-control" id="palatable_human" type="text" placeholder="Yes"> -->
+                      <select name="Edible" id="Edible">
+                        <option value="">N/A</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                       </select>
+                    </li>
+                   
                   </ul>
                 </div>
               </div>
@@ -87,7 +115,7 @@
         </div>
         <div class="col-md-10">
           <div id="table-area" class="">
-            <!-- <h1 class="text-center loader" id="loader">Loading...</h1> -->
+            <h4 class="text-center loader" id="loader">If your search returns no records, change some filters and try again.</h4>
             <!-- rename table id to plants -->
             <table id="ufo-table" class="table table-striped table-sm">
               <thead>
@@ -97,14 +125,14 @@
                   <th class="table-head">Scientific Name</th>
                   <th class="table-head">Family Name</th>
                   <th class="table-head">Duration</th>
-                  <th class="table-head">Flower Color</th>
+                  <th class="table-head">Flower_Color</th>
                   <th class="table-head">Foliage Color</th>
                   <th class="table-head">Kind of Plant</th>
                   <th class="table-head">Height Maturity (feet)</th>
                   <th class="table-head">Toxicity</th>
-                  <th class="table-head">Drought Tolerance</th>
-                  <th class="table-head">Shade Tolerance</th>
-                  <th class="table-head">Bloom Time</th>
+                  <th class="table-head">Drought_Tolerance</th>
+                  <th class="table-head">Shade_Tolerance</th>
+                  <th class="table-head">Bloom_Time</th>
                   <th class="table-head">Edible</th>
                 </tr>
               </thead>

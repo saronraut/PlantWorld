@@ -749,7 +749,7 @@ moss phlox,Phlox subulata,Phlox family,Perennial,Purple,Green,"Subshrub, Forb/he
 purple mountainheath,Phyllodoce breweri,Heath family,Perennial,Purple,Green,"Subshrub, Shrub",1,Slight,None,Intermediate,Summer,No
 common ninebark,Physocarpus opulifolius,Rose family,Perennial,Purple,Green,Shrub,10,None,High,Intolerant,Late Spring,No
 bristlecone pine,Pinus aristata,Pine family,Perennial,Purple,Green,Tree,40,None,High,Intolerant,Mid Summer,No
-sweetscent,Pluchea odorata var. odorata,Aster family,"Perennial, AN",Purple,Green,"Forb/herb, Subshrub",4.9,None,Medium,Intolerant,Indeterminate,No
+sweetscent,Pluchea odorata var. odorata,Aster family,"Annual, Perennial",Purple,Green,"Forb/herb, Subshrub",4.9,None,Medium,Intolerant,Indeterminate,No
 arctic bluegrass,Poa arctica,Grass family,Perennial,Purple,Green,Graminoid,2,None,Low,Intolerant,,No
 largeflower speargrass,Poa eminens,Grass family,Perennial,Purple,Green,Graminoid,2,None,Medium,Intolerant,,No
 glaucous bluegrass,Poa glauca,Grass family,Perennial,Purple,Green,Graminoid,2,None,Medium,Intolerant,Mid Summer,No
@@ -805,9 +805,9 @@ purple vetch,Vicia benghalensis,Pea family,Annual,Purple,Green,"Vine, Forb/herb"
 bird vetch,Vicia cracca,Pea family,Perennial,Purple,Green,"Vine, Forb/herb",1.5,None,High,Intermediate,Late Spring,No
 garden vetch,Vicia sativa,Pea family,Annual,Purple,Green,"Vine, Forb/herb",4,Slight,Low,Tolerant,Early Spring,Yes
 winter vetch,Vicia villosa,Pea family,"Annual, Biennial, Perennial",Purple,Green,"Forb/herb, Vine",1.5,Slight,Medium,Intolerant,Late Winter,No
-winter vetch,Vicia villosa ssp. varia,Pea family,"Annual, Perennial, Biennial",Purple,Green,"Forb/herb, Vine",1.5,None,Medium,Intolerant,Early Spring,No
+winter vetch,Vicia villosa ssp. varia,Pea family,"Annual, Biennial, Perennial",Purple,Green,"Forb/herb, Vine",1.5,None,Medium,Intolerant,Early Spring,No
 cowpea,Vigna unguiculata,Pea family,Annual,Purple,Green,"Vine, Forb/herb",2.5,None,None,Intolerant,Summer,Yes
-common blue violet,Viola sororia,Violet family,"Perennial, AN",Purple,Green,Forb/herb,0.3,None,Low,Intermediate,Mid Spring,No
+common blue violet,Viola sororia,Violet family,"Annual, Perennial",Purple,Green,Forb/herb,0.3,None,Low,Intermediate,Mid Spring,No
 American wisteria,Wisteria frutescens,Pea family,Perennial,Purple,Green,Vine,50,None,Low,Tolerant,Spring,No
 white fir,Abies concolor,Pine family,Perennial,Red,Green,Tree,120,None,Medium,Intermediate,Late Spring,No
 Virginia threeseed mercury,Acalypha virginica,Spurge family,Annual,Red,Green,Forb/herb,3,None,Medium,Intermediate,Early Summer,No
@@ -947,7 +947,7 @@ Brewer's bittercress,Cardamine breweri var. breweri,Mustard family,Perennial,Whi
 bulbous bittercress,Cardamine bulbosa,Mustard family,Perennial,White,Green,Forb/herb,1.4,None,None,Tolerant,Mid Spring,No
 heartleaf bittercress,Cardamine cordifolia,Mustard family,Perennial,White,Green,Forb/herb,1.5,None,None,Tolerant,Late Spring,No
 little western bittercress,Cardamine oligosperma,Mustard family,"Annual, Biennial, Perennial",White,Green,Forb/herb,1.7,None,Low,Tolerant,Early Spring,No
-Pennsylvania bittercress,Cardamine pensylvanica,Mustard family,"Annual, Perennial, Biennial",White,Green,Forb/herb,1.5,None,None,Tolerant,Early Spring,No
+Pennsylvania bittercress,Cardamine pensylvanica,Mustard family,"Annual, Biennial, Perennial",White,Green,Forb/herb,1.5,None,None,Tolerant,Early Spring,No
 white arctic mountain heather,Cassiope tetragona,Heath family,Perennial,White,Green,"Subshrub, Shrub",0.4,None,Medium,Intolerant,Late Spring,No
 southern catalpa,Catalpa bignonioides,Trumpet-creeper family,Perennial,White,Green,Tree,66,None,Medium,Intermediate,Mid Spring,No
 whitethorn ceanothus,Ceanothus cordulatus,Buckthorn family,Perennial,White,Green,Shrub,5,None,Low,Intermediate,Early Summer,No
@@ -1345,7 +1345,7 @@ yellow birch,Betula alleghaniensis,Birch family,Perennial,Yellow,Green,Tree,75,N
 sweet birch,Betula lenta,Birch family,Perennial,Yellow,Green,Tree,60,None,Medium,Intolerant,Late Spring,No
 water birch,Betula occidentalis,Birch family,Perennial,Yellow,Green,"Tree, Shrub",25,None,Low,Intermediate,Mid Spring,No
 paper birch,Betula papyrifera,Birch family,Perennial,Yellow,Green,Tree,70,None,Low,Intolerant,Mid Spring,Yes
-bearded beggarticks,Bidens aristosa,Aster family,"Biennial, AN",Yellow,Green,Forb/herb,3.5,None,Low,Intermediate,Late Summer,No
+bearded beggarticks,Bidens aristosa,Aster family,"Annual, Biennial",Yellow,Green,Forb/herb,3.5,None,Low,Intermediate,Late Summer,No
 nodding beggartick,Bidens cernua,Aster family,Annual,Yellow,Green,Forb/herb,3.2,None,Low,Intermediate,Late Summer,No
 purplestem beggarticks,Bidens connata,Aster family,Annual,Yellow,Green,Forb/herb,3.2,None,Low,Intermediate,Late Summer,No
 crowned beggarticks,Bidens coronata,Aster family,Annual,Yellow,Green,Forb/herb,3.4,None,Low,Intermediate,Late Summer,No
@@ -1369,7 +1369,7 @@ nodding brome,Bromus anomalus,Grass family,Perennial,Yellow,Green,Graminoid,2,No
 field brome,Bromus arvensis,Grass family,Annual,Yellow,Green,Graminoid,3,None,Low,Intolerant,Mid Spring,No
 rattlesnake brome,Bromus briziformis,Grass family,Annual,Yellow,Green,Graminoid,1.6,None,Medium,Intolerant,Late Spring,No
 California brome,Bromus carinatus,Grass family,"Annual, Perennial",Yellow,Green,Graminoid,4,None,Medium,Intolerant,Early Spring,No
-rescuegrass,Bromus catharticus,Grass family,"Perennial, AN",Yellow,Green,Graminoid,3,None,Low,Intolerant,Early Spring,No
+rescuegrass,Bromus catharticus,Grass family,"Annual, Perennial",Yellow,Green,Graminoid,3,None,Low,Intolerant,Early Spring,No
 fringed brome,Bromus ciliatus,Grass family,Perennial,Yellow,Green,Graminoid,4,None,Low,Tolerant,Spring,No
 soft brome,Bromus hordeaceus ssp. hordeaceus,Grass family,Annual,Yellow,Green,Graminoid,2,None,High,Intermediate,Mid Spring,No
 smooth brome,Bromus inermis,Grass family,Perennial,Yellow,Green,Graminoid,4.5,None,Medium,Intolerant,Early Spring,No
@@ -1543,7 +1543,7 @@ Salina wildrye,Leymus salinus,Grass family,Perennial,Yellow,Green,Graminoid,2.3,
 beardless wildrye,Leymus triticoides,Grass family,Perennial,Yellow,Green,Graminoid,3,None,High,Intolerant,Late Spring,No
 ridged yellow flax,Linum striatum,Flax family,Perennial,Yellow,Green,Forb/herb,2.6,None,Low,Tolerant,Summer,No
 tuliptree,Liriodendron tulipifera,Magnolia family,Perennial,Yellow,Green,Tree,120,None,Low,Intolerant,Mid Spring,No
-perennial ryegrass,Lolium perenne,Grass family,"Perennial, AN",Yellow,Green,Graminoid,3,None,Low,Intolerant,Mid Spring,No
+perennial ryegrass,Lolium perenne,Grass family,"Annual, Perennial",Yellow,Green,Graminoid,3,None,Low,Intolerant,Mid Spring,No
 Italian ryegrass,Lolium perenne ssp. multiflorum,Grass family,"Annual, Perennial",Yellow,Green,Graminoid,2.5,None,Low,Intermediate,Early Spring,No
 Wimmera ryegrass,Lolium rigidum,Grass family,Annual,Yellow,Green,Graminoid,3.5,None,Low,Intolerant,Early Spring,No
 cous biscuitroot,Lomatium cous,Carrot family,Perennial,Yellow,Green,Forb/herb,0.8,None,High,Intolerant,Early Spring,Yes
