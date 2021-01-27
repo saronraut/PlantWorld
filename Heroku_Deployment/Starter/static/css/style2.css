@@ -6,17 +6,17 @@ body {
   
   /* set map, body, and html to 100% of the screen size */
   #mapid {
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
     position: center;
-    zoom: 0;
+    zoom: 1;
   }
   
   
   body,
-  html {
+   html {
     height: 100%;
-  }  
+  }   
 
   #mapid {
     display: block;
@@ -83,7 +83,18 @@ p{
 #mapid  {
   margin-top: 25px;
   border-style: solid;
-  border-width: 20px;
+  border-width: 15px;
   border-color: #f7fcb9;
+  /* outline-color: tomato; */
+}
+
+.jumbotron {
+  padding: 1rem 1rem;
+}
+
+#text_msg {
+  color: white;
+  position: left;
+  position: top;
 }
 

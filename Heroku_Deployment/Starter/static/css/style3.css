@@ -17,4 +17,7 @@
     color: teal;
 }
 
-.navbar-header {
+.a.navbar-header {
+    position: left;
+
+}

@@ -39,31 +39,31 @@ def form():
     return render_template("form.html")
 
 
-@app.route("/api/pals")
-def pals():
-    results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
+# @app.route("/api/pals")
+# def pals():
+#     results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
 
-    hover_text = [result[0] for result in results]
-    lat = [result[1] for result in results]
-    lon = [result[2] for result in results]
+#     hover_text = [result[0] for result in results]
+#     lat = [result[1] for result in results]
+#     lon = [result[2] for result in results]
 
-    pet_data = [{
-        "type": "scattergeo",
-        "locationmode": "USA-states",
-        "lat": lat,
-        "lon": lon,
-        "text": hover_text,
-        "hoverinfo": "text",
-        "marker": {
-            "size": 50,
-            "line": {
-                "color": "rgb(8,8,8)",
-                "width": 1
-            },
-        }
-    }]
+#     pet_data = [{
+#         "type": "scattergeo",
+#         "locationmode": "USA-states",
+#         "lat": lat,
+#         "lon": lon,
+#         "text": hover_text,
+#         "hoverinfo": "text",
+#         "marker": {
+#             "size": 50,
+#             "line": {
+#                 "color": "rgb(8,8,8)",
+#                 "width": 1
+#             },
+#         }
+#     }]
 
-    return jsonify(pet_data)
+#     return jsonify(pet_data)
 
 @app.route("/trends")
 def trends():
