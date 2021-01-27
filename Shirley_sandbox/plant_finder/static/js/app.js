@@ -1,20 +1,14 @@
-// from data.js
-//Update====================================
-//need to grab from database
-// var tableData = data;
-let tableData = data;
 
 // get table references
 let tbody = d3.select("tbody");
 
 d3.json("/plants").then(data => {
-  console.log(data.data.slice(0,25))
   const initial_data = data.data.slice(0,25)
   const loc = window.location.pathname;
   if(loc === "/form"){
   // console.log("form route")
     tbody.html("");
-    const dataset = data.data
+    const dataSet = data.data
     const mapped_data = initial_data.map(item=>{
     const tbody = document.querySelector("tbody");
     tbody.innerHTML += `
@@ -34,70 +28,95 @@ d3.json("/plants").then(data => {
         <td>${item.Edible}</td>
     </tr>`
   })
- }
-})
-function buildTable(data) {
-  // First, clear out any existing data
+  d3.selectAll("#filter-btn").on("click", updateFilters);
+
+  function updateFilters() {
+    // prevent auto refresh 
+    d3.event.preventDefault();
   
-  // Next, loop through each object in the data
-  // and append a row and cells for each value in the row
-  data.forEach((dataRow) => {
-    // Append a row to the table body
-    var row = tbody.append("tr");
+    // Save the element, value, and id of the filter that was changed
+    let filterNames = ["#Edible", "#Toxicity"];
+    let filters = {};
 
-    // Loop through each field in the dataRow and add
-    // each value as a table cell (td)
-    Object.values(dataRow).forEach((val) => {
-      var cell = row.append("td");
-      cell.text(val);
-      console.log(val)
+    for (idFilters of filterNames){
+      let changedElement = d3.select(idFilters);
+      let elementValue = changedElement.property("value");
+      let filterId = changedElement.attr("id");
+
+      // If a filter value was entered then add that filterId and value
+      // to the filters list. Otherwise, clear that filter from the filters object
+      if (elementValue) {
+        filters[filterId] = elementValue;
+      }
+      else {
+        delete filters[filterId];
+      }
+    }
+    
+    // Call function to apply all filters and rebuild the table
+    filterTable(filters);
+  
+  }
+
+  function filterTable(filterValues) {
+
+    // Set the filteredData to the tableData
+    let filteredData = dataSet;
+  
+    // Loop through all of the filters and keep any data that
+    // matches the filter values
+    Object.entries(filterValues).forEach(([key, value]) => {
+      filteredData = filteredData.filter(row => row[key] === value);
     });
-  });
-}
+  
+    // Finally, rebuild the table using the filtered Data
+    buildTable(filteredData);
 
-// Keep Track of all filters
-//Update HTML =========================
-//the filters are in html file table
-let filters = {};
-
-function updateFilters() {
-
-  // Save the element, value, and id of the filter that was changed
-  var changedElement = d3.select(this).select("input");
-  var elementValue = changedElement.property("value");
-  var filterId = changedElement.attr("id");
-
-  // If a filter value was entered then add that filterId and value
-  // to the filters list. Otherwise, clear that filter from the filters object
-  if (elementValue) {
-    filters[filterId] = elementValue;
-  }
-  else {
-    delete filters[filterId];
   }
 
-  // Call function to apply all filters and rebuild the table
-  filterTable();
+  function buildTable(data) {
+    // First, clear out any existing data
+    tbody.html("");
 
-}
+    // Next, loop through each object in the data
+    // and append a row and cells for each value in the row
+    data.forEach((dataRow) => {
+      // Append a row to the table body
+      let row = tbody.append("tr");
 
-function filterTable() {
+      // add each value as a table cell (td)
+  
+      let commonName = dataRow['Common_Name'];
+      let bloomPeriod = dataRow['Bloom_Period'];
+      let droughtTolerance = dataRow['Drought_Tolerance'];
+      let duration = dataRow['Duration'];
+      let edible = dataRow['Edible'];
+      let familyName = dataRow['Family_Name'];
+      let flowerColor = dataRow['Flower_Color'];
+      let foliage = dataRow['Foliage_Color'];
+      let kindOfPlant = dataRow['Kind_of_Plant'];
+      let scientificName = dataRow['Scientific_Name'];
+      let shadeTolerance = dataRow['Shade_Tolerance'];
+      let toxicity = dataRow['Toxicity'];
+      let height = dataRow['Mature_Ht_ft'];
 
-  // Set the filteredData to the tableData
-  let filteredData = tableData;
+      row.append("td").text(commonName);
+      row.append("td").text(scientificName);
+      row.append("td").text(familyName);
+      row.append("td").text(duration);
+      row.append("td").text(flowerColor);
+      row.append("td").text(foliage);
+      row.append("td").text(kindOfPlant);
+      row.append("td").text(height);
+      row.append("td").text(toxicity);
+      row.append("td").text(droughtTolerance);
+      row.append("td").text(shadeTolerance);
+      row.append("td").text(bloomPeriod);
+      row.append("td").text(edible);
 
-  // Loop through all of the filters and keep any data that
-  // matches the filter values
-  Object.entries(filters).forEach(([key, value]) => {
-    filteredData = filteredData.filter(row => row[key] === value);
-  });
+    });
+  }
 
-  // Finally, rebuild the table using the filtered Data
-  buildTable(filteredData);
-}
-
-// Attach an event to listen for changes to each filter
-d3.selectAll(".filter").on("change", updateFilters);
-
-// Build the table when the page loads
-// buildTable(tableData);
+ }
+  
+})
