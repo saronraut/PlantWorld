@@ -1,19 +1,28 @@
   
 body {
     padding: 0;
-    margin: 0;
+    margin-left: 0;
   }
   
   /* set map, body, and html to 100% of the screen size */
   #mapid {
     height: 50%;
-    width: 50%
+    width: 50%;
+    position: center;
+    zoom: 0;
   }
   
   
   body,
   html {
     height: 100%;
+  }  
+
+  #mapid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
 
   .info {
@@ -40,3 +49,41 @@ body {
   margin-right: 8px;
   opacity: 0.7;
 }
+
+body{
+  background-color: #001a00;
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 100px;
+}
+
+p{
+  color: whitesmoke;
+  font-size: 35px;
+}
+
+.navbar-brand {
+  color: whitesmoke;
+  
+}
+
+.navbar.navbar-default {
+  color: whitesmoke;
+  font-size: 17px;
+
+}
+
+.jumbotron {
+  border-color: white;
+  margin-bottom: 0px;
+}
+
+#mapid  {
+  margin-top: 25px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: #f7fcb9;
+}
+
