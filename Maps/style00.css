@@ -1,0 +1,17 @@
+  
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* set map, body, and html to 100% of the screen size */
+  #mapid, 
+  body,
+  html {
+    height: 100%;
+  }
+
+  /* #mapid { 
+    height: 180px;
+    width:auto
+  } */
