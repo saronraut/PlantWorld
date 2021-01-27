@@ -34,7 +34,7 @@ d3.json("/plants").then(data => {
     d3.event.preventDefault();
   
     // Save the element, value, and id of the filter that was changed
-    let filterNames = ["#Flower_Color","#Drought_Tolerance","#Shade_Tolerance","#Duration","#Edible", "#Toxicity"];
+    let filterNames = ["#Flower_Color","#Drought_Tolerance","#Shade_Tolerance","#Duration","#Bloom_Period","#Edible", "#Toxicity"];
     let filters = {};
     console.log(filterNames)
 

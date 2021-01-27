@@ -80,18 +80,36 @@
                       <label for="droughtTolerance">Drought_Tolerance</label>
                       <select name="droughtTolerance" id="Drought_Tolerance">
                         <option value="">N/A</option>
-                        <option value="High">Tolerant</option>
-                        <option value="Low">Intolerant</option>
-                        <option value="Medium">Intermediate</option>
+                        <option value="High">High</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
                       </select>
                     </li>
                     <li class="filter list-group-item">
                       <label for="shade">Shade_Tolerance</label>
                       <select name="shade" id="Shade_Tolerance">
                         <option value="">N/A</option>
-                        <option value="Tolerant">Shade tolerant</option>
-                        <option value="Intolerant">Full sun</option>
-                        <option value="Intermediate">Sun - part shade</option>
+                        <option value="Tolerant">Tolerant</option>
+                        <option value="Intolerant">Intolerance</option>
+                        <option value="Intermediate">Intermediate</option>
+                      </select>
+                    </li> 
+                    <li class="filter list-group-item">
+                      <label for="bloomTime">Bloom_Period</label>
+                      <select name="bloomTime" id="Bloom_Period">
+                        <option value="">N/A</option>
+                        <option value="Early Spring">Early Spring</option>
+                        <option value="Mid Spring">Mid Spring</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Late Spring">Late Spring</option>
+                        <option value="Early Summer">Early Summer</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Mid Summer">Mid Summer</option>
+                        <option value="Late Summer">Late Summer</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Winter">Winter</option>
+                        <option value="Late Winter">Late Winter</option>
+                        <option value="Indeterminate">Indeterminate</option>
                       </select>
                     </li> 
                    
@@ -115,7 +133,7 @@
         </div>
         <div class="col-md-10">
           <div id="table-area" class="">
-            <h4 class="text-center loader" id="loader">If your search returns no records, change some filters and try again.</h4>
+            <h5 class="text-center loader" id="loader">Make your selections; then hit the "Filter Table"  to search. If your search returns no records, change some filters and try again.</h5>
             <!-- rename table id to plants -->
             <table id="ufo-table" class="table table-striped table-sm">
               <thead>
@@ -132,7 +150,7 @@
                   <th class="table-head">Toxicity</th>
                   <th class="table-head">Drought_Tolerance</th>
                   <th class="table-head">Shade_Tolerance</th>
-                  <th class="table-head">Bloom_Time</th>
+                  <th class="table-head">Bloom_Period</th>
                   <th class="table-head">Edible</th>
                 </tr>
               </thead>
