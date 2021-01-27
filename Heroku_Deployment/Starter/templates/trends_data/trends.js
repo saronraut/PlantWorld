@@ -87,14 +87,20 @@
         type: 'scatter',
         name: 'orange tree',
         line: {
-          color: '#234F1E',
+          color: '#6aa84f',
         }
       };
       var layout1 = {
-        title: "Fruit Trees",
+        title: {
+          text:"Popular Fruit Trees",
+          font: {
+            family: 'Arial',
+            size: 24
+          },
+        },
         hovermode: "closest",
         hoverlabel: { bgcolor: "#FFF" },
-        legend: {orientation: 'h', y: -0.3},
+        legend: {orientation: 'h', y: -0.1},
         xaxis: {
           title: "Date",
           zeroline: false
@@ -105,7 +111,7 @@
         }
       }
       var data1 = [trace1, trace2, trace3, trace4, trace5];
-      Plotly.newPlot("graph1", data1, layout1)
+      Plotly.newPlot("graph3", data1, layout1)
     })
     
     d3.json("trends_data/buy_vs_dying.json").then((data) => {
@@ -133,7 +139,7 @@
         type: 'scatter',
         name: "buy plants online",
         line: {
-          color: '#32612D',
+          color: '#0A5E2AFF',
         }
       };
       var trace2 = {
@@ -142,15 +148,21 @@
         type: 'scatter',
         name: "dying plant",
         line: {
-          color: '#FFA500',
+          color: '#fa625f',
         }
       };
       var data1 = [trace1, trace2];
       var layout2 = {
-        title: "Buying Plants vs Dying Plants",
+        title: {
+          text:"Buying Plants Vs Dying Plants",
+          font: {
+            family: 'Arial',
+            size: 24
+          },
+        },
         hovermode: "closest",
         hoverlabel: { bgcolor: "#FFF" },
-        legend: {orientation: 'h', y: -0.3},
+        legend: {orientation: 'h', y: -0.1},
         xaxis: {
           title: "Date",
           zeroline: false
@@ -188,7 +200,7 @@
         type: 'scatter',
         name: 'vegetable garden',
         line: {
-          color: '#234F1E',
+          color: '#00A4CCFF',
         }
       };
       var trace2 = {
@@ -197,15 +209,21 @@
         type: 'scatter',
         name: 'flower garden',
         line: {
-          color: '#FF7F50',
+          color: '#FF3EA5FF',
         }
       };
       var data1 = [trace1, trace2];
       var layout3 = {
-        title: "Flowers or Vegetables",
+        title: {
+          text:"Flower Vs Vegetable Gardens",
+          font: {
+            family: 'Arial',
+            size: 24
+          },
+        },
         hovermode: "closest",
         hoverlabel: { bgcolor: "#FFF" },
-        legend: {orientation: 'h', y: -0.3},
+        legend: {orientation: 'h', y: -0.1},
         xaxis: {
           title: "Date",
           zeroline: false
@@ -215,7 +233,7 @@
           zeroline: false
         }
       }
-      Plotly.newPlot("graph3", data1, layout3)
+      Plotly.newPlot("graph1", data1, layout3)
     })
 
     d3.json("trends_data/flowers.json").then((data) => {
@@ -271,7 +289,7 @@
         type: 'scatter',
         name: 'daffodil',
         line: {
-          color: '#ffde22',
+          color: '#c0e218',
         }
       };
       var trace2 = {
@@ -280,7 +298,7 @@
         type: 'scatter',
         name: 'marigold',
         line: {
-          color: '#39a0ca',
+          color: '#f37121',
         }
       };
       var trace3 = {
@@ -289,7 +307,7 @@
         type: 'scatter',
         name: 'tulip',
         line: {
-          color: '#f95d9b',
+          color: '#c70039',
         }
 
       };
@@ -309,15 +327,21 @@
         type: 'scatter',
         name: 'lily',
         line: {
-          color: '#478559',
+          color: '#51c2d5',
         }
 
       };
       var layout4 = {
-        title: "Top Flowers",
+        title: {
+          text:"Popular Flowers",
+          font: {
+            family: 'Arial',
+            size: 24
+          },
+        },
         hovermode: "closest",
         hoverlabel: { bgcolor: "#FFF" },
-        legend: {orientation: 'h', y: -0.3},
+        legend: {orientation: 'h', y: -0.1},
         xaxis: {
           title: "Date",
           zeroline: false
