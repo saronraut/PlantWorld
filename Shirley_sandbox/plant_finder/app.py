@@ -19,7 +19,7 @@ def home():
 def form():
     return render_template("form.html")
 
-@app.route("/form")
+@app.route("/plants")
 def plants():
     data = []
     for flowers in db.flowers.find():
