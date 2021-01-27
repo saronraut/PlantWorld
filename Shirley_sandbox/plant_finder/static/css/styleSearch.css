@@ -43,7 +43,7 @@ body {
   margin: 0;
 }
 
-/* This CSS styles the ufo icon in the navbar */
+/* This CSS styles the leaf icon in the navbar */
 .nav-plant {
   position: absolute;
   bottom: 16px;
@@ -98,7 +98,8 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/meadow_purple.jfif");
+  background-image: url("../images/field.jfif");
+  /* background-image: url("../images/forest.svg"); */
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -107,6 +108,7 @@ select {
 .hero h1 {
   margin-top: 200px;
   font-size: 0.1rem;
+  /* color: rgb(248, 95, 240); */
   animation: title 1.2s forwards linear;
 }
 

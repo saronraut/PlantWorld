@@ -2,9 +2,10 @@
 //Update====================================
 //need to grab from database
 // var tableData = data;
+let tableData = data;
 
 // get table references
-var tbody = d3.select("tbody");
+let tbody = d3.select("tbody");
 
 d3.json("/plants").then(data => {
   console.log(data.data.slice(0,25))
@@ -57,7 +58,7 @@ function buildTable(data) {
 // Keep Track of all filters
 //Update HTML =========================
 //the filters are in html file table
-var filters = {};
+let filters = {};
 
 function updateFilters() {
 
