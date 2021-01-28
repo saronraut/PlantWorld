@@ -14,7 +14,7 @@ body {
 .wrapper {
   position: relative;
   min-height: 100%;
-  padding-bottom: 130px;
+  padding-bottom: 10px;
   overflow: auto;
 }
 
@@ -98,7 +98,7 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/field.jfif");
+  background-image: url("../img/field.jfif");
   /* background-image: url("../images/forest.svg"); */
   background-attachment: fixed;
   background-position: bottom center;
@@ -242,4 +242,8 @@ select {
   to {
     opacity: 1;
   }
+}
+
+body{
+  background-color: #507e50;
 }
