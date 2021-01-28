@@ -1,2 +1,0 @@
-
-const API_KEY = "pk.eyJ1IjoiZWx6LWhhcnJpIiwiYSI6ImNranB1NzV4ZTBsbGoycnBrMjNnM2RxZHgifQ.2Hcz3V0CeuwL2gps3D-GYA";
