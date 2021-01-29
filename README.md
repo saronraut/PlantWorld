@@ -39,7 +39,7 @@
     - leaflet GeoJSON
     - Choropleth map
     - Plotly
-
+    - PyTrends Google Search
 
 Folder Location: 
 
