@@ -10,15 +10,18 @@
         - jsonify
         - request
         - redirect
+
     -pymongo
     -flask_cors
     -d3
+
 
 * Database style used
     - MongoDB
     - Sqlite3
     - csv
     - json
+
 
 * Data Clean-up/Scraping
     - ipynb: 
@@ -29,11 +32,28 @@
         - SqlAlchemy
         - requests
 
+
 * Plot Library
     - MatPlotLib
     - leaflet GeoJSON
     - Choropleth map
     - Plotly
+
+
+Folder Location: 
+
+    - /static/css
+        CSS stylingsheet used for the html page
+
+    - /static/img/
+        Images and potential images that was used in development of the html pages
+
+    -/static/js
+        JS script for html templates
+
+    /static/templates
+        Html pages used for page deployment through app.py
+
 
     
 
